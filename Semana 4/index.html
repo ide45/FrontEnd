@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Pokedex LaunchX</h1>
+    </div>
+   
+    <div class="pok">
+
+        <div class="contenido">
+
+            <div class="dentro">
+
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8c1278f2-6f53-4727-b803-1a4c297c191f/dapbbed-30642074-7c2d-43c2-ad05-be7bc0f0089a.png/v1/fill/w_1600,h_1600,strp/original_pokeball_vector_by_greenmachine987_dapbbed-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcLzhjMTI3OGYyLTZmNTMtNDcyNy1iODAzLTFhNGMyOTdjMTkxZlwvZGFwYmJlZC0zMDY0MjA3NC03YzJkLTQzYzItYWQwNS1iZTdiYzBmMDA4OWEucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cisWXCiz7JCdLjr-HzGGsjoQUsGf6StVLVGStptev20" alt="Pokemon" id="pokeImg" width="150px">
+
+                <div class="row">
+
+                    <p class="resaltar">Nombre: &nbsp;<p id="nombre"> </p></p><br>
+                    
+                </div>
+
+                <div class="row">
+
+                    <p class="resaltar">Tipo: &nbsp;<p id="type"></p> </p>
+                    
+                </div>
+
+                <div class="row">
+
+                    <p class="resaltar">Id: &nbsp;<p id="id"></p></p>
+                    
+                </div>
+                
+            </div>
+
+            <div class="dentro">
+
+                <p class="resaltar">Estadísticas</p>
+
+                <div class="row">
+                    <p>Hp: &nbsp;<p id="statValue0"></p></p>
+                </div>
+                
+                <div class="row">
+                    <p>Ataque: &nbsp;<p id="statValue1"></p></p>
+                </div>
+
+                <div class="row">
+                    <p>Defensa: &nbsp;<p id="statValue2"></p></p>
+                </div>
+
+                <div class="row">
+                    <p>Ataque especial: &nbsp;<p id="statValue3"></p></p>
+                </div>
+
+                <div class="row">
+                    <p>Defensa especial: &nbsp;<p id="statValue4"></p></p>
+                </div>
+
+                <div class="row">
+                    <p>Velocidad: &nbsp;<p id="statValue5"></p></p>
+                </div>
+            </div>
+
+            <div class="info">
+                <p class="resaltar">Habilidades</p><br>
+                <ul id="habilidades"> 
+    
+                </ul>
+            </div>
+             
+        </div>
+        
+    </div>
+
+    <div class="habilidades">
+        
+
+        <input type="text" placeholder="Ingrese un pokemon..." id="pokeName" name="pokeName">
+        <button onclick="fetchPokemon()">Buscar pokemón...</button>   <!--onclick manda a llamar una función en JS-->
+    </div>
+    
+</body>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+</html>
